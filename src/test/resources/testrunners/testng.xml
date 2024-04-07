@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Open Cart Test Suite"  thread-count="3" parallel="tests"  verbose="3">
+
+	<test name="Open Cart Login Page Test _ chrome_89">
+		<parameter name="url" value="https://naveenautomationlabs.com/opencart/index.php?route=account/login" />
+			<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="AppTest.OpenCartTest" />
+		</classes>
+	</test>
+	
+	<test name="ORANGEHRM  Test _ chrome_89">
+		<parameter name="url" value="https://www.orangehrm.com/orangehrm-30-day-trial/" />
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="AppTest.OrangeHRM" />
+		</classes>
+	</test>     
+	
+	<test name="GOOGLE  Test _ chrome_89">
+		<parameter name="url" value="https://www.google.com/" />
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="AppTest.GooglTest" />
+		</classes>
+	</test>
+</suite>
